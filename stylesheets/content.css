@@ -1,0 +1,20 @@
+div {
+    width: 200px;
+    height: 200px;
+    position: relative;
+    background-color: black;
+    animation-name: example;
+    animation-duration: 5s;
+    border-radius: 10px;
+    box-shadow: 10px 10px 15px rgba(255, 0, 184, 0.25);
+    animation-iteration-count: infinite;
+    animation-timing-function: ease-in;
+
+}
+@keyframes example {
+  0%{ background-color: black; left: 0px; top: 0px;}
+  15%{ background-color: blue; left: 0px; top: 600px;}
+  40%{ background-color: yellow; left: 600px; top: 600px;}
+  100%{ background-color: lightpink; left: 0px; top: 0px;}
+
+}
