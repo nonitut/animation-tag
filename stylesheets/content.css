@@ -1,32 +1,32 @@
 
 .mario {
   width: 68px;
-  height: -68px;
+  height: 68px;
   display: block;
   position: relative;
-  background: url('images/mario-walk-n-jump-68.png');
+  background: url('../images/mario-walk-n-jump-68.png');
 /*  background-position: -68px top;*/;
-  animation: walk .4s steps(1) infinite;
+  animation: walk .4s steps(1)  infinite;
 }
 .path{
   width: 68px;
-  height: -68px;
+  height: 68px;
   display: block;
   position: absolute;
   top: 200px;
   animation: path 3s linear infinite;
 }
 @keyframes walk {
-  0%{ background-position:   0px; top;}
-  25%{ background-position:  -68px; top}
-  75%{ background-position:  -136px; top}
-  100%{ background-position:  -204px; top;}
+  0%{ background-position:   0px top;}
+  25%{ background-position:  -68px top;}
+  75%{ background-position:  -136px top;}
+  100%{ background-position:  -204px top;}
 }
 @keyframes path {
   0%{left: -68px top;}
   25%{left: 100%}
 }
-.tty{width: 68px;
+.tty {width: 68px;
 height: -68px;
 display: block;
 position: relative;
