@@ -6,7 +6,7 @@
   position: relative;
   background: url('../images/mario-walk-n-jump-68.png');
 /*  background-position: -68px top;*/;
-  animation: walk .9s steps(1)  infinite;
+  animation: walk 0.9s steps(1)  infinite;
 }
 .path{
   width: 68px;
@@ -15,6 +15,18 @@
   position: absolute;
   top: 200px;
   animation: path 3s linear infinite;
+}
+.mario2 {
+  width: 68px;
+  height: 68px;
+  left: 0;
+  top: 0;
+  opacity: 0;
+  display: block;
+  position: absolute;
+  background: url('../images/mario-walk-n-jump-68.png');
+/*  background-position: -68px top;*/;
+  animation: jump 5s steps(1)  infinite;
 }
 @keyframes walk {
   0%{ background-position:   0px top;}
@@ -29,6 +41,16 @@
   55%{left: 56%; top: 200px;}
   100%{left: 100%}
 }
+
+@keyframes jump {
+  0%{ opacity: 0;}
+  49%{ background-position:  -300px top; opacity: 1;}
+  50%{ background-position:  -340px top;  opacity: 1;}
+  51%{ background-position:  -340px top; opacity: 1;}
+  100%{ opacity: 0;}
+}
+
+
 .blast {
 width: 151px;
 height: 151px;
@@ -63,22 +85,23 @@ animation-play-state: running;
   43%{ background-position:  -1057px -151px;}
   47%{ background-position:  -0px -302px;}
 
-  27%{ background-position:  -151px -302px;}
-  27%{ background-position:  -302px -302px;}
-  30%{ background-position:  -453px -302px;}
-  33%{ background-position:  -604px -151px;}
-  37%{ background-position:  -755px -151px;}
-  40%{ background-position:  -906px -151px;}
-  43%{ background-position:  -1057px -151px;}
-  47%{ background-position:  -0px -302px;}
-  27%{ background-position:  -151px -151px;}
-  27%{ background-position:  -302px -151px;}
-  30%{ background-position:  -453px -151px;}
-  33%{ background-position:  -604px -151px;}
-  37%{ background-position:  -755px -151px;}
-  40%{ background-position:  -906px -151px;}
-  43%{ background-position:  -1057px -151px;}
-  47%{ background-position:  -0px -302px;}
+  50%{ background-position:  -151px -302px;}
+  53%{ background-position:  -302px -302px;}
+  57%{ background-position:  -453px -302px;}
+  60%{ background-position:  -604px -302px;}
+  63%{ background-position:  -755px -302px;}
+  67%{ background-position:  -906px -302px;}
+  70%{ background-position:  -1057px -302px;}
+  73%{ background-position:  -0px -302px;}
+
+  76%{ background-position:  -151px -453px;}
+  80%{ background-position:  -302px -453px;}
+  83%{ background-position:  -453px -453px;}
+  88%{ background-position:  -604px -453px;}
+  90%{ background-position:  -755px -453px;}
+  94%{ background-position:  -906px -453px;}
+  96%{ background-position:  -1057px -453px;}
+  100%{ background-position:  -0px -453px;}
 }
 .text{
   overflow: hidden;
