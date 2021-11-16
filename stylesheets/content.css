@@ -1,18 +1,33 @@
 
 .mario {
   width: 68px;
-  height: 68px;
+  height: -68px;
   display: block;
-  background: url('images/mario-walk-n-jump-68.png')
-/*  background-position: -68px top;*/
-  animation-name: walk;
+  position: relative;
+  background: url('images/mario-walk-n-jump-68.png');
+/*  background-position: -68px top;*/;
   animation: walk .4s steps(1) infinite;
 }
-@keyframes walk {
-  0%{ background-color:   0px; top;}
-  15%{ background-color:  -68px; top}
-  40%{ background-color:  -136px; top}
-  100%{ background-color:  -204px; top;}
-
-
+.path{
+  width: 68px;
+  height: -68px;
+  display: block;
+  position: absolute;
+  top: 200px;
+  animation: path 3s linear infinite;
 }
+@keyframes walk {
+  0%{ background-position:   0px; top;}
+  25%{ background-position:  -68px; top}
+  75%{ background-position:  -136px; top}
+  100%{ background-position:  -204px; top;}
+}
+@keyframes path {
+  0%{left: -68px top;}
+  25%{left: 100%}
+}
+.tty{width: 68px;
+height: -68px;
+display: block;
+position: relative;
+background: url('images/blast-151.png');}
