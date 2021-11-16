@@ -1,20 +1,18 @@
-div {
-    width: 200px;
-    height: 200px;
-    position: relative;
-    background-color: black;
-    animation-name: example;
-    animation-duration: 5s;
-    border-radius: 10px;
-    box-shadow: 10px 10px 15px rgba(255, 0, 184, 0.25);
-    animation-iteration-count: infinite;
-    animation-timing-function: ease-in;
 
+.mario {
+  width: 68px;
+  height: 68px;
+  display: block;
+  background: url('images/mario-walk-n-jump-68.png')
+/*  background-position: -68px top;*/
+  animation-name: walk;
+  animation: walk .4s steps(1) infinite;
 }
-@keyframes example {
-  0%{ background-color: black; left: 0px; top: 0px;}
-  15%{ background-color: blue; left: 0px; top: 600px;}
-  40%{ background-color: yellow; left: 600px; top: 600px;}
-  100%{ background-color: lightpink; left: 0px; top: 0px;}
+@keyframes walk {
+  0%{ background-color:   0px; top;}
+  15%{ background-color:  -68px; top}
+  40%{ background-color:  -136px; top}
+  100%{ background-color:  -204px; top;}
+
 
 }
