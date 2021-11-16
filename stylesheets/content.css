@@ -29,8 +29,66 @@
   55%{left: 56%; top: 200px;}
   100%{left: 100%}
 }
-.tty {width: 68px;
-height: -68px;
+.blast {
+width: 151px;
+height: 151px;
 display: block;
-position: relative;
-background: url('images/blast-151.png');}
+position: absolute;
+background: url('../images/blast-151.png');
+left: 50%;
+animation: blast 1s steps(1)  infinite;
+animation-play-state: paused;
+}
+.blast:hover{
+animation-play-state: running;
+}
+
+@keyframes blast {
+  0%{ background-position:   0px 0px;}
+  3%{ background-position:  -151px 0px;}
+  6%{ background-position:  -302px 0px;}
+  9%{ background-position:  -453px 0px;}
+  12%{ background-position:  -604px 0px;}
+  15%{ background-position:  -755px 0px;}
+  18%{ background-position:  -906px 0px;}
+  21%{ background-position:  -1057px 0px;}
+  24%{ background-position:   0px -151px;}
+
+  27%{ background-position:  -151px -151px;}
+  28%{ background-position:  -302px -151px;}
+  30%{ background-position:  -453px -151px;}
+  33%{ background-position:  -604px -151px;}
+  37%{ background-position:  -755px -151px;}
+  40%{ background-position:  -906px -151px;}
+  43%{ background-position:  -1057px -151px;}
+  47%{ background-position:  -0px -302px;}
+
+  27%{ background-position:  -151px -302px;}
+  27%{ background-position:  -302px -302px;}
+  30%{ background-position:  -453px -302px;}
+  33%{ background-position:  -604px -151px;}
+  37%{ background-position:  -755px -151px;}
+  40%{ background-position:  -906px -151px;}
+  43%{ background-position:  -1057px -151px;}
+  47%{ background-position:  -0px -302px;}
+  27%{ background-position:  -151px -151px;}
+  27%{ background-position:  -302px -151px;}
+  30%{ background-position:  -453px -151px;}
+  33%{ background-position:  -604px -151px;}
+  37%{ background-position:  -755px -151px;}
+  40%{ background-position:  -906px -151px;}
+  43%{ background-position:  -1057px -151px;}
+  47%{ background-position:  -0px -302px;}
+}
+.text{
+  overflow: hidden;
+  white-space: nowrap;
+  animation: text 15s linear infinite;
+}
+.text:hover {
+  animation-play-state: paused;
+}
+@keyframes text {
+  from { text-indent: 100%}
+  to { text-indent: -100%}
+}
