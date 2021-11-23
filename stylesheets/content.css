@@ -115,3 +115,20 @@ animation-play-state: running;
   from { text-indent: 100%}
   to { text-indent: -100%}
 }
+.imogis {
+  width: 160px;
+  height: 160px;
+  display: block;
+  position: relative;
+  background: url('../images/imogis.png  ');
+/*  background-position: -68px top;*/;
+  animation: imogis 1s steps(1)  infinite;
+}
+
+@keyframes imogis {
+  0%{ background-position:   0px top;}
+  15%{ background-position:  -160px top;}
+  30%{ background-position:  -320px top;}
+  45%{ background-position:  -480px top;}
+  75%{ background-position:  -640px top;}
+  100%{ background-position:  -960px top;}
